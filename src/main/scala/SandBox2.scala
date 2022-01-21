@@ -16,6 +16,7 @@ object SandBox2 {
   def main(args: Array[String]): Unit = {
     1
     2
+    3
     val spark = SparkSession.builder.config("spark.driver.memory", "10G").appName("SandBox2").master("local").getOrCreate()
     Logger.getLogger("org").setLevel(Level.OFF)
     Logger.getLogger("akka").setLevel(Level.OFF)
